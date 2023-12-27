@@ -1,16 +1,47 @@
+:root {
+    --color-brand: #819B57;
+}
+/* base - глобальні/базові стилі */
+ul {
+    list-style-type: none;
+}
+/* button - стилі кнопок */
 .button {
-    color: rgba(250, 244, 234, 1);
+    color: #faf4ea;
     border-radius: 8px;
-    border: 2px solid #819B57;
-    background-color: #819B57;
+    border: 2px solid var(--color-brand);
+    background-color: var(--color-brand);
     cursor: pointer;
 }
 .button:hover {
     background-color:  transparent;
-    color: rgba(70, 89, 41, 1);
+    color: #465929;
 }
 
 .button:active {
     background-color: grey;
-    color: rgba(70, 89, 41, 1);
+    color: #465929;
+}
+/* link - стилі посилання */
+.link {
+    color: #faf4ea;
+}
+.link:hover {
+    color: var(--color-brand);
+}
+/* hero section */
+.hero-title {
+    color: #faf4ea;
+}
+.hero-title .accent {
+    color: var(--color-brand);
+}
+/* advantages section */
+.advantages-list {
+    color: rgba(250, 244, 234, 1);
+        background-color: var(--color-brand);
+
+}
+.section-title {
+    color: #31261A;
 }
