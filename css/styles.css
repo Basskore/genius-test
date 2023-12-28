@@ -1,47 +1,55 @@
 :root {
-    --color-brand: #819B57;
+    --color-brand-light: #819B57;
+    --color-brand-dark: #465929;
+    --color-primary-dark: #31261A;
+    --color-primary-light: #faf4ea;
 }
 /* base - глобальні/базові стилі */
+body {
+    color: var(--color-primary-dark);
+}
+
 ul {
     list-style-type: none;
 }
 /* button - стилі кнопок */
 .button {
-    color: #faf4ea;
+    color: var(--color-primary-light);
     border-radius: 8px;
-    border: 2px solid var(--color-brand);
-    background-color: var(--color-brand);
+    border: 2px solid var(--color-brand-light);
+    background-color: var(--color-brand-light);
     cursor: pointer;
 }
 .button:hover {
     background-color:  transparent;
-    color: #465929;
+    color: var(--color-brand-dark);
 }
 
-.button:active {
+/* .button:active {
     background-color: grey;
-    color: #465929;
-}
+    color: var(--color-brand-dark);
+} */
 /* link - стилі посилання */
 .link {
-    color: #faf4ea;
+    color: var(--color-primary-light);
 }
 .link:hover {
-    color: var(--color-brand);
+    color: var(--color-brand-light);
 }
 /* hero section */
 .hero-title {
-    color: #faf4ea;
+    color: var(--color-primary-light);
+    font-family: Poppins, serif;
 }
 .hero-title .accent {
-    color: var(--color-brand);
+    color: var(--color-brand-light);
 }
 /* advantages section */
 .advantages-list {
-    color: rgba(250, 244, 234, 1);
-        background-color: var(--color-brand);
+    color: --color-primary-light:;
+        background-color: var(--color-brand-light);
 
 }
-.section-title {
-    color: #31261A;
+.section-title .accent{
+    color: var(--color-brand-dark)
 }
